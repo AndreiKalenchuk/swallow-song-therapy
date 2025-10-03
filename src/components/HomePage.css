@@ -1,0 +1,175 @@
+/* Home Page Styles */
+.home-page {
+  text-align: center;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--background-accent) 0%, var(--background-secondary) 100%);
+  padding: 4rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px var(--shadow-light);
+  margin-bottom: 3rem;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="medical" patternUnits="userSpaceOnUse" width="20" height="20"><circle cx="10" cy="10" r="1" fill="%23ffffff" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23medical)"/></svg>');
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  color: var(--text-secondary);
+}
+
+/* Services Overview Section */
+.services-overview {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.services-overview h3 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: var(--background-primary);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px var(--shadow-light);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(44, 90, 160, 0.15);
+}
+
+.service-card-image {
+  width: 100%;
+  max-width: 250px;
+  height: 180px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  border: 2px dashed var(--border-color);
+}
+
+.adult-service-image-placeholder {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.pediatric-service-image-placeholder {
+  background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+}
+
+.service-card h4 {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.service-link {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.service-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(44, 90, 160, 0.3);
+}
+
+/* Responsive Design for Home Page */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+
+  .services-overview h3 {
+    font-size: 1.8rem;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .service-card {
+    padding: 1.5rem;
+  }
+
+  .service-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .service-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .services-overview h3 {
+    font-size: 1.6rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .service-card-image {
+    height: 150px;
+    font-size: 1rem;
+  }
+}

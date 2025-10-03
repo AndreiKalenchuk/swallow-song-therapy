@@ -1,0 +1,93 @@
+/* Adult Services Page Styles */
+.service-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.service-page h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+  font-size: 2.2rem;
+}
+
+.service-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.placeholder-image {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--background-accent) 0%, var(--background-secondary) 100%);
+  border: 2px dashed var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.adult-image {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+}
+
+.service-description {
+  padding: 2rem 0;
+}
+
+.service-description h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.service-description h4 {
+  color: var(--primary-color);
+  margin: 1.5rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.service-description p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.service-description ul {
+  margin: 1.5rem 0;
+}
+
+.service-description li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.service-description li strong {
+  color: var(--primary-color);
+}
+
+/* Responsive Design for Adult Services Page */
+@media (max-width: 768px) {
+  .service-page h2 {
+    font-size: 1.8rem;
+  }
+  
+  .placeholder-image {
+    height: 200px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-description p {
+    text-align: left;
+  }
+}
