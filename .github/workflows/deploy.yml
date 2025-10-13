@@ -24,6 +24,9 @@ jobs:
       - name: Update npm to latest version
         run: npm install -g npm@latest
 
+      - name: Clean install environment
+        run: rm -rf node_modules package-lock.json
+
       - name: Install dependencies
         run: npm ci
 
