@@ -24,11 +24,11 @@ jobs:
       - name: Install npm v10 globally
         run: npm install -g npm@10.8.2
 
-      - name: Clean install environment
-        run: rm -rf node_modules
+      - name: Set npm registry to public
+        run: npm config set registry https://registry.npmjs.org/
 
       - name: Install dependencies
-        run: npm install
+        run: npm install --verbose
 
       - name: Print npm debug log if exists
         run: cat /home/runner/.npm/_logs/*.log || echo "No npm log found"
