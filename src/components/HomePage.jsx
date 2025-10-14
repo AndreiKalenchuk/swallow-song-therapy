@@ -32,13 +32,13 @@ function HomePage() {
 
       {/* Services Overview Section */}
       <section className="services-overview">
-        <h3>Our Specialized Services</h3>
+        <h3>Our speech pathology services</h3>
         <div className="service-cards">
           <div className="service-card">
             <div className="service-card-image adult-service-image-placeholder">
-              Adult Services Image
+              Adult Services
             </div>
-            <h4>Adult Services</h4>
+            <h4>Speech pathology for Adult</h4>
             <p>
               We provide comprehensive diagnostic pathology services for adult patients,
               covering a wide range of conditions and specialties. Our expertise ensures
@@ -48,7 +48,7 @@ function HomePage() {
           </div>
           <div className="service-card">
             <div className="service-card-image pediatric-service-image-placeholder">
-              Pediatric Services Image
+              Pediatric speech pathology services
             </div>
             <h4>Pediatric Services</h4>
             <p>
