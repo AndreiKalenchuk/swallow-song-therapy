@@ -31,7 +31,7 @@ jobs:
         run: rm -rf node_modules package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       - name: Print npm debug log if exists
         run: cat /home/runner/.npm/_logs/*.log || echo "No npm log found"
