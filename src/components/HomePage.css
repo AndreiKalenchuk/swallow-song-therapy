@@ -102,6 +102,18 @@
   flex-grow: 1;
 }
 
+.service-card ul {
+  text-align: left;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.2rem;
+  list-style-position: inside;
+}
+
 .service-link {
   display: inline-block;
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
